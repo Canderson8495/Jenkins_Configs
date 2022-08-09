@@ -1,7 +1,7 @@
 node {
     def app
     stage('Clone repository') {
-        sh 'mkdir -p /tmp/${BUILD_TAG}'
+        sh 'mkdir /tmp/${BUILD_TAG}'
         sh 'git clone -b ${branch} https://github.com/Canderson8495/fivem-1.git /tmp/${BUILD_TAG}'
     }
 
